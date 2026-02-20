@@ -1,0 +1,1068 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Top Header ===== */
+/* Top Header Styles */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #F5F5F5;
+    color: gray;
+}
+
+/*  Social Media Icons */
+.topbar-social {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-social i {
+    font-size: 15px;
+    color: inherit;
+    padding: 5px 10px;
+}
+
+#facebook,
+#instagram,
+#pinterest,
+#snapchat,
+#youtube {
+    color: inherit;
+}
+
+#facebook:hover {
+    color: #3b5998;
+    cursor: pointer;
+}
+
+#instagram:hover {
+    color: #e1306c;
+    cursor: pointer;
+}
+
+#pinterest:hover {
+    color: #bd081c;
+    cursor: pointer;
+}
+
+#snapchat:hover {
+    color: #fffc00;
+    cursor: pointer;
+}
+
+#youtube:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+/* Center Text CSS */
+.text-center {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 13px;
+}
+
+.text-center p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Right Content CSS */
+.right-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+}
+
+.right-content p {
+    margin: 0;
+    text-align: center;
+}
+
+.right-content select {
+    padding: 5px;
+    color: gray;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* ===== Bottom Fixed Header ===== */
+.bottom-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.price {
+    color: red;
+}
+
+.web-name img {
+    padding-top: 5px;
+    align-items: center;
+}
+
+.left-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.left-navigation img {
+    padding: 10px 20px;
+
+}
+
+.linedivide1 {
+    display: block;
+    height: 30px;
+    width: 2px;
+    background-color: #e5e5e5;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #212529;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+
+.Nav:hover {
+    color: #df1010;
+
+}
+
+/* ===== Hamburger ===== */
+.hamburger {
+    width: 30px;
+    height: 22px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: #000;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Animate → Close */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== Offcanvas TOP ===== */
+.offcanvas-top {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background: #f5f5f5;
+    transition: 0.4s ease;
+    padding: 80px 20px;
+    z-index: 999;
+}
+
+.offcanvas-top.active {
+    top: 0;
+}
+
+.offcanvas-top .right-content {
+    padding: 10px 20px;
+}
+
+.offcanvas-top .topbar-social {
+    border: 3px solid gray;
+    padding: 10px 20px;
+    border-left: none;
+    border-right: none;
+}
+
+.offcanvas-top .text-center {
+    border: 3px solid gray;
+    padding: 10px 20px;
+    border-left: none;
+    border-right: none;
+}
+
+/* ===== Content ===== */
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.carousel-caption h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.carousel-caption p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.carousel-caption .btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+.carousel-caption .btn:hover {
+    background-color: #cc4444;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* Div Overlap  */
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+.image-box:hover .overlay {
+    bottom: 0;
+}
+
+.card {
+    padding: 20px;
+}
+
+/* ===== Desktop Grid ===== */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Card */
+.cards {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Image */
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover zoom */
+.cards:hover img {
+    transform: scale(1.1);
+}
+
+/* Button bottom center */
+.cards button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 150px;
+    transform: translateX(-50%);
+    padding: 12px 28px;
+    border: none;
+    text-transform: uppercase;
+    color: gray;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.cards button:hover {
+    background: #cc4444;
+    color: white;
+}
+
+#last-card {
+    background-color: #F5F5F5;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+#last-card h4 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#last-card p {
+    text-align: center;
+    color: gray;
+}
+
+
+.signup {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.signup:hover {
+    background-color: #cc4444;
+    color: white;
+    font-weight: bold;
+}
+
+.swiper-heading h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    transition: 0.4s ease;
+}
+
+/* ✅ Overlay Only Bottom Area */
+.product-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: 0.4s ease;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+/* Button Animation */
+.overlay-btn {
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 25px;
+    background-color: white;
+    transform: translateY(40px);
+    transition: 0.5s ease;
+}
+
+.overlay-btn:hover {
+    color: white;
+    background-color: red;
+    font-weight: bold;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-card:hover .overlay-btn {
+    transform: translateY(0);
+}
+
+/* ✅ Heart Always Visible */
+.wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.wishlist i {
+    color: #999;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.wishlist i.active {
+    color: red;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========== Bananar Styling  ===========  */
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.detail-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-align: center;
+}
+
+.image-container:hover .detail-overlay {
+    opacity: 1;
+}
+
+.price-overlay {
+    font-size: 18px;
+}
+
+.left-side {
+    padding-top: 100px;
+}
+
+.right-side {
+    position: inherit;
+    bottom: 20px;
+    align-items: center;
+}
+
+.left-side h3 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.right-side p {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+.left-side p {
+    font-size: 18px;
+    color: white;
+}
+
+.left-side h2 {
+    font-size: 35px;
+    color: white;
+}
+
+.countdown {
+    font-size: 18px;
+}
+
+/* ========== Footer End Part ========== */
+/* ========== Shipping Details Section ========= */
+.footer-top {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    padding: 45px 45px 35px 45px;
+
+}
+
+.shiping {
+    padding-top: 62px;
+    padding-bottom: 46px;
+}
+
+.footer-top h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-top p,
+a {
+    font-size: 12px;
+    color: #888888;
+}
+
+.box {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: gray;
+    text-align: center;
+    border: 1px solid gray
+}
+
+#box-1,
+#box-3 {
+    border: none;
+}
+
+#box-2 {
+    border-top: none;
+    border-bottom: none;
+}
+
+.box i {
+    color: black;
+}
+
+.box i {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.box h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.box p {
+    font-size: 14px;
+}
+
+
+/* ======= Follow Bannar Section ========= */
+.heading h2 {
+    margin: 25px 20px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.follow-bananar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 20px 20px;
+
+}
+
+.parent {
+    position: relative;
+    width: 300px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+.base img {
+    display: block;
+    width: 100%;
+    padding: 2px 2px;
+
+}
+
+.base {
+    width: 300px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.4s ease;
+}
+
+.parent:hover .overlay {
+    opacity: 1;
+    bottom: 0;
+    cursor: pointer;
+}
+
+
+/* Feature Page Styling  */
+.cart-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product img {
+    width: 80px;
+}
+
+.qty {
+    display: inline-flex;
+    border: 1px solid #ddd;
+}
+
+.qty button {
+    width: 35px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+}
+
+.qty input {
+    width: 40px;
+    border: none;
+    text-align: center;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cart-actions input {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    background: #111;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Feature Banner Image */
+.cart-banner {
+    height: 300px;
+    background: url('./Shop/banner-08.jpg') center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-banner {
+    height: 300px;
+    background: url('./Shop/banner-08.jpg') center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cart-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.cart-banner h1 {
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 4px;
+    z-index: 1;
+}
+
+/* =========== Footer Styling ============ */
+footer {
+    background: #f5f5f5;
+    padding: 50px 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #000;
+}
+
+.social-icons a {
+    margin: 2px;
+    color: #888;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+.newsletter input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    font-size: 14px;
+    outline: none;
+}
+
+.newsletter button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #333;
+}
+
+.footet-end {
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #888888;    
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 15px;
+}
+
+.bankicons img {
+    width: 50px;
+        /* height: 0px; */
+        padding: 0px 5px;
+    object-fit: contain;
+}
+
+
+/* =======popup styling ====== */
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-overlay.active {
+    display: flex;
+}
+
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup img {
+    width: 150px;
+}
+
+.close-btn {
+    margin-top: 15px;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    .hamburger {
+        display: block;
+    }
+
+    .bottom-header {
+        position: fixed;
+    }
+
+    .bottom-header nav {
+        display: none;
+    }
+
+    .ul li a {
+        display: none;
+    }
+
+    .top-header {
+        display: none;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        height: 260px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* 🔑 Mobile UX fix */
+    .cart-btn {
+        bottom: 20px;
+    }
+
+    .heart {
+        opacity: 1;
+    }
+
+    .main-content,
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-content ul li a {
+        text-align: center;
+    }
+
+    .topbar-social {
+        align-items: center;
+    }
+
+    .box {
+        border: none;
+    }
+
+    .follow {
+        align-items: center;
+    }
+
+    .follow-bananar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom-header {
+        display: flex;
+        border: 2px solid blue;
+    }
+
+    .left-navigation {
+        position: absolute;
+        right: 55px;
+
+    }
+
+    .left-navigation span {
+        display: none;
+    }
+
+    .left-navigation img {
+        align-items: center;
+        padding: 5;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        height: 260px;
+    }
+}
